@@ -1,5 +1,9 @@
 #!/bin/sh
 
+wget https://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh
+chmod +x netbeans-8.2-linux.sh
+./netbeans-8.2-linux.sh
+
 systemctl start mysql.service
 systemctl start apache2
 
