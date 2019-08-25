@@ -1,7 +1,9 @@
 #!/bin/sh
 
 systemctl start mysql.service
-systemctl start apache2.service
+systemctl start apache2
+
+su
 
 
 
