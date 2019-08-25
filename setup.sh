@@ -1,5 +1,10 @@
 #!/bin/sh
 
+systemctl start mysql.service
+systemctl start apache2.service
+
+
+
 useradd -c "Merritt User" -d /home/merritt -s /usr/bin/bash -m merritt
 mkdir /home/merritt/public_html
 chmod 755 /home/merritt/public_html
