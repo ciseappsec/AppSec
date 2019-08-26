@@ -5,7 +5,7 @@ else
   echo "Installing netbeans"
   wget https://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh
   chmod +x netbeans-8.2-linux.sh
-  ./netbeans-8.2-linux.sh
+  ./netbeans-8.2-linux.sh --silent
 fi
 
 systemctl start mysql.service
