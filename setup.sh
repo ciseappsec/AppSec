@@ -1,5 +1,7 @@
 #!/bin/sh
 if dpkg-query -W -f'${Status}' "netbeans" 2>/dev/null | grep -q "ok installed"; then
+else
+  echo "Installing netbeans"
   wget https://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh
   chmod +x netbeans-8.2-linux.sh
   ./netbeans-8.2-linux.sh
