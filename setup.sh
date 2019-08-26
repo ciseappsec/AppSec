@@ -1,6 +1,7 @@
 #!/bin/sh
 which "netbeans" > /dev/null 2>&1
-if [ $? == 0 ] then
+if [ $? == 0 ] 
+then
   wget https://download.netbeans.org/netbeans/8.2/final/bundles/netbeans-8.2-linux.sh
   chmod +x netbeans-8.2-linux.sh
   ./netbeans-8.2-linux.sh
