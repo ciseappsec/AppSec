@@ -1,4 +1,12 @@
 #!/bin/sh
+
+if dpkg-query -W -f'${Status}' "openjdk-8-jdk" 2>/dev/null | grep -q "ok installed"; then
+  echo "OpenJDK already installed"
+else
+  echo "Installing openjdk-8-jdk"
+  apt-get install openjdk-8-jdk
+fi
+
 if dpkg-query -W -f'${Status}' "netbeans" 2>/dev/null | grep -q "ok installed"; then
   echo "Netbeans already installed"
 else
